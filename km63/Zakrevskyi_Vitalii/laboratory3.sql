@@ -26,6 +26,9 @@ THAN ORDERITEMSTYPE:=('NO');
 ELSE ORDERITEMS.ITEM_PRICE=''
 THAN ORDERITEMSTYPE:=('UNKNOWN');
 END IF;
+DBMS_OUTPUT.PUT_LINE(VENDORNAME ||ORDERITEMTYPE)
+END;                             
+                              
 
 /*3. Створити представлення та використати його у двох запитах:
 3.1. Скільки продуктів було замовлено покупцями з Германії.
